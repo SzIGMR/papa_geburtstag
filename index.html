@@ -7,46 +7,51 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url("bild2.jpg"); /* Set "bild2.jpg" as the background image */
-            background-color: rgba(53, 92, 125, 0.7); /* Transparent dark slate blue/indigo overlay */
-            background-blend-mode: overlay; /* Blend background image and color */
+            background-image: url("bild2.jpg");
+            background-color: rgba(53, 92, 125, 0.7);
+            background-blend-mode: overlay;
             text-align: center;
-            color: #CCCCCC; /* Very light gray text color */
+            color: #CCCCCC;
+            margin: 0; /* Remove default margin to utilize the entire viewport */
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: rgba(108, 91, 123, 0.7); /* Transparent deep mauve for the container background */
+            background-color: rgba(108, 91, 123, 0.7);
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
         .header {
-            background-color: rgba(246, 114, 128, 0.7); /* Transparent muted coral for the header background */
+            background-color: rgba(246, 114, 128, 0.7);
             padding: 10px;
             border-radius: 10px 10px 0 0;
         }
         h1 {
-            color: #CCCCCC; /* Very light gray for the header text */
+            color: #CCCCCC;
         }
         .picture-section {
             padding: 20px;
+            display: flex;
+            flex-wrap: wrap; /* Ensure images wrap on small screens */
+            justify-content: center;
+        }
+        .picture-section img {
+            margin: 10px; /* Add some spacing between images */
+            max-width: 100%; /* Ensure images don't exceed container width */
         }
         .present-section {
             padding: 20px;
         }
-        .hotel-link {
-            margin-top: 20px;
-        }
         p {
             font-size: 18px;
-            color: #CCCCCC; /* Very light gray for paragraph text */
+            color: #CCCCCC;
         }
         a {
-            color: #CCCCCC; /* Very light gray for links */
+            color: #CCCCCC;
         }
         a:hover {
-            color: #FFD700; /* Golden color for hover effect */
+            color: #FFD700;
         }
     </style>
 </head>
@@ -61,7 +66,7 @@
         </div>
         <div class="present-section">
             <h2>Dein Geburtstagsgeschenk</h2>
-            <img src="bild4.jpg" alt="Birthday Present" width="400">
+            <img src="bild4.jpg" alt="Birthday Present" width="300">
             <p>Wir laden dich ein!</p>
             <p>Zu einem Ausflug mit deinen Kindern und Enkelkindern.</p>
             <p>Zwei Übernachtungen in der ersten Januarwoche</p>
